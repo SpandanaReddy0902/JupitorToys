@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="planit">
+	<test name=" Validate_errors_are_gone ">
+		<classes>
+			<class name="automation.testcases.Validate_errors_are_gone" />
+
+		</classes>
+	</test>
+
+
+	<test name=" Validate_errors_invalid_data ">
+		<classes>
+			<class name="automation.testcases.Validate_errors_invalid_data" />
+
+		</classes>
+	</test>
+
+	<test name=" Validate_Successful_Message ">
+		<classes>
+			<class name="automation.testcases.Validate_Successful_Message" />
+
+		</classes>
+	</test>
+
+	<test name=" Validate_itemsincart ">
+		<classes>
+			<class name="automation.testcases.Verify_itemsincart" />
+
+		</classes>
+	</test>
+
+</suite>
