@@ -98,7 +98,7 @@
 	</dependencies>
 	<build>
 		<!-- To define the plugin version in your parent POM -->
-		<sourceDirectory>src</sourceDirectory>
+		
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -122,7 +122,7 @@
 				<version>3.0.0-M6</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

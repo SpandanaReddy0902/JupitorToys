@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-27T01:51:50Z" name="Default suite" finished-at="2022-04-27T01:52:05Z" duration-ms="15527">
+  <suite started-at="2022-04-30T22:03:23 AEST" name="Default suite" finished-at="2022-04-30T22:04:05 AEST" duration-ms="41809">
     <groups>
     </groups>
-    <test started-at="2022-04-27T01:51:50Z" name="Default test" finished-at="2022-04-27T01:52:05Z" duration-ms="15527">
+    <test started-at="2022-04-30T22:03:23 AEST" name="Default test" finished-at="2022-04-30T22:04:05 AEST" duration-ms="41809">
       <class name="automation.testcases.Validate_errors_are_gone">
-        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_are_gone@4f3bbf68]" started-at="2022-04-27T11:51:50Z" name="configBrowser" finished-at="2022-04-27T11:52:02Z" duration-ms="12473" status="PASS">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_are_gone@6892b3b6]" started-at="2022-04-30T22:03:23 AEST" name="configBrowser" finished-at="2022-04-30T22:04:00 AEST" duration-ms="37222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBrowser -->
-        <test-method signature="validateErrors()[pri:1, instance:automation.testcases.Validate_errors_are_gone@4f3bbf68]" started-at="2022-04-27T11:52:02Z" name="validateErrors" finished-at="2022-04-27T11:52:05Z" duration-ms="3004" status="PASS">
+        <test-method signature="validateErrors()[pri:1, instance:automation.testcases.Validate_errors_are_gone@6892b3b6]" started-at="2022-04-30T22:04:00 AEST" name="validateErrors" finished-at="2022-04-30T22:04:05 AEST" duration-ms="4357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateErrors -->
