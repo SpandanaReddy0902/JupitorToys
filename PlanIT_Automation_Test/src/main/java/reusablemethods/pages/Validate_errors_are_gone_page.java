@@ -18,6 +18,7 @@ public class Validate_errors_are_gone_page {
 	public static WebElement namep;
 	
 	@FindBy(id ="email")
+	
 	public static WebElement emailid;
 	
 	@FindBy(name ="message")

@@ -18,7 +18,7 @@ public class Validate_errors_are_gone extends TestBase {
 		String forenameError = "Forename is required";
 		String emailError = "Email is required";
 		Boolean notDisplayed = false;
-		
+		 
 		//Navigating to contact page
 		
 		Homepage_to_Contactpage hc = new Homepage_to_Contactpage(driver);

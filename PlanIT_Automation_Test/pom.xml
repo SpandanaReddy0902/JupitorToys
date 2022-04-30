@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.11</version>
+			<version>7.5</version>
 			<scope>compile</scope>
 		</dependency>
 
@@ -87,5 +87,36 @@
 
 
 	</dependencies>
+	<build>
+		<!-- To define the plugin version in your parent POM -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.10.1</version>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+		<!-- To use the plugin goals in your POM or parent POM -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M6</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
