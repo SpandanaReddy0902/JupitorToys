@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-30T22:03:23 AEST" name="Default suite" finished-at="2022-04-30T22:04:05 AEST" duration-ms="41809">
+  <suite started-at="2022-05-01T00:23:27 AEST" name="planit" finished-at="2022-05-01T00:25:59 AEST" duration-ms="152878">
     <groups>
     </groups>
-    <test started-at="2022-04-30T22:03:23 AEST" name="Default test" finished-at="2022-04-30T22:04:05 AEST" duration-ms="41809">
+    <test started-at="2022-05-01T00:23:27 AEST" name=" Validate_errors_are_gone " finished-at="2022-05-01T00:24:46 AEST" duration-ms="79498">
       <class name="automation.testcases.Validate_errors_are_gone">
-        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_are_gone@6892b3b6]" started-at="2022-04-30T22:03:23 AEST" name="configBrowser" finished-at="2022-04-30T22:04:00 AEST" duration-ms="37222" status="PASS">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_are_gone@6892b3b6]" started-at="2022-05-01T00:23:27 AEST" name="configBrowser" finished-at="2022-05-01T00:24:39 AEST" duration-ms="72143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBrowser -->
-        <test-method signature="validateErrors()[pri:1, instance:automation.testcases.Validate_errors_are_gone@6892b3b6]" started-at="2022-04-30T22:04:00 AEST" name="validateErrors" finished-at="2022-04-30T22:04:05 AEST" duration-ms="4357" status="PASS">
+        <test-method signature="validateErrors()[pri:1, instance:automation.testcases.Validate_errors_are_gone@6892b3b6]" started-at="2022-05-01T00:24:39 AEST" name="validateErrors" finished-at="2022-05-01T00:24:46 AEST" duration-ms="6865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateErrors -->
       </class> <!-- automation.testcases.Validate_errors_are_gone -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!--  Validate_errors_are_gone  -->
+    <test started-at="2022-05-01T00:24:46 AEST" name=" Validate_errors_invalid_data " finished-at="2022-05-01T00:25:10 AEST" duration-ms="23474">
+      <class name="automation.testcases.Validate_errors_invalid_data">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_invalid_data@2d901eb0]" started-at="2022-05-01T00:24:46 AEST" name="configBrowser" finished-at="2022-05-01T00:25:06 AEST" duration-ms="19500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBrowser -->
+        <test-method signature="invalidDataErrors()[pri:3, instance:automation.testcases.Validate_errors_invalid_data@2d901eb0]" started-at="2022-05-01T00:25:06 AEST" name="invalidDataErrors" finished-at="2022-05-01T00:25:10 AEST" duration-ms="3955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidDataErrors -->
+      </class> <!-- automation.testcases.Validate_errors_invalid_data -->
+    </test> <!--  Validate_errors_invalid_data  -->
+    <test started-at="2022-05-01T00:25:10 AEST" name=" Validate_Successful_Message " finished-at="2022-05-01T00:25:43 AEST" duration-ms="33560">
+      <class name="automation.testcases.Validate_Successful_Message">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_Successful_Message@606e4010]" started-at="2022-05-01T00:25:10 AEST" name="configBrowser" finished-at="2022-05-01T00:25:36 AEST" duration-ms="26520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBrowser -->
+        <test-method signature="validateSuccess()[pri:2, instance:automation.testcases.Validate_Successful_Message@606e4010]" started-at="2022-05-01T00:25:36 AEST" name="validateSuccess" finished-at="2022-05-01T00:25:43 AEST" duration-ms="7029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSuccess -->
+      </class> <!-- automation.testcases.Validate_Successful_Message -->
+    </test> <!--  Validate_Successful_Message  -->
+    <test started-at="2022-05-01T00:25:43 AEST" name=" Validate_itemsincart " finished-at="2022-05-01T00:25:59 AEST" duration-ms="16207">
+      <class name="automation.testcases.Verify_itemsincart">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Verify_itemsincart@5b218417]" started-at="2022-05-01T00:25:43 AEST" name="configBrowser" finished-at="2022-05-01T00:25:55 AEST" duration-ms="11425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBrowser -->
+        <test-method signature="verifyItemsinCart()[pri:4, instance:automation.testcases.Verify_itemsincart@5b218417]" started-at="2022-05-01T00:25:55 AEST" name="verifyItemsinCart" finished-at="2022-05-01T00:25:59 AEST" duration-ms="4769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemsinCart -->
+      </class> <!-- automation.testcases.Verify_itemsincart -->
+    </test> <!--  Validate_itemsincart  -->
+  </suite> <!-- planit -->
 </testng-results>

@@ -14,7 +14,7 @@ public class Validate_errors_are_gone extends TestBase {
 	@Test(priority = 1)
 	public void validateErrors() {
 
-		String messageError = "Message is required";
+		String messageError = "Message";
 		String forenameError = "Forename is required";
 		String emailError = "Email is required";
 		Boolean notDisplayed = false;
