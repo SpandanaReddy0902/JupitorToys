@@ -13,19 +13,19 @@ public class Validate_errors_are_gone extends TestBase {
 
 	@Test(priority = 1)
 	public void validateErrors() {
-
+		test = extent.createTest("validateErrors");
 		String messageError = "Message is required";
 		String forenameError = "Forename is required";
 		String emailError = "Email is required";
 		Boolean notDisplayed = false;
-		 
-		//Navigating to contact page
-		
+
+		// Navigating to contact page
+
 		Homepage_to_Contactpage hc = new Homepage_to_Contactpage(driver);
 		hc.contactPage();
-		
-		//Submitting the form in contact page without any data
-		
+
+		// Submitting the form in contact page without any data
+
 		Validate_errors_are_gone_page ve = new Validate_errors_are_gone_page(driver);
 		Actions actions = new Actions(driver);
 		actions.sendKeys(Keys.PAGE_DOWN).perform();
@@ -60,8 +60,6 @@ public class Validate_errors_are_gone extends TestBase {
 
 		Boolean messagePresent = driver.getPageSource().contains(messageError);
 		assertEquals(messagePresent, notDisplayed);
-
-		driver.quit();
 
 	}
 

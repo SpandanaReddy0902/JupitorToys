@@ -10,7 +10,7 @@ public class Validate_errors_invalid_data extends TestBase {
 	@Test(priority=3)
 	
 	public void invalidDataErrors() {
-		
+		test=extent.createTest("invalidDataErrors");
 		Boolean vaildEmail=true;
 		
 		//Navigating to contact page
@@ -28,8 +28,6 @@ public class Validate_errors_invalid_data extends TestBase {
 		Boolean emailvalidation=driver.getPageSource().contains("Please enter a valid email");
 		assertEquals(emailvalidation,vaildEmail);
 		
-		
-		driver.quit();
 		
 	}
 

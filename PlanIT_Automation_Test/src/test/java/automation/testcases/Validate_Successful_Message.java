@@ -7,6 +7,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.markuputils.ExtentColor;
+
 import reusablemethods.base.TestBase;
 import reusablemethods.pages.Homepage_to_Contactpage;
 import reusablemethods.pages.Validate_errors_are_gone_page;
@@ -15,10 +17,11 @@ import reusablemethods.pages.Validate_errors_are_gone_page;
 
 public class Validate_Successful_Message extends TestBase {
 
-	public static void validateSuccess() {
+	public  void validateSuccess() {
+		
 		
 		//Navigating to Contact page from Home page
-		
+		test = extent.createTest("validateSuccess");
 		Homepage_to_Contactpage hc = new Homepage_to_Contactpage(driver);
 		hc.contactPage();
 
@@ -37,8 +40,6 @@ public class Validate_Successful_Message extends TestBase {
 		String actualsucessful = driver.findElement(By.xpath("//strong[contains(@class,'ng-binding')]")).getText().substring(0, 6);
 		String expectedsuccessfulmes = "Thanks";
 		assertEquals(actualsucessful, expectedsuccessfulmes);
-
-		driver.quit();
 
 	}
 
