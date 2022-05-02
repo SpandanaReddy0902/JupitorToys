@@ -146,6 +146,28 @@
           <div class="suite-planit-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">automation.testcases.Validate_errors_invalid_data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidDataErrors">
+                  </a> <!-- invalidDataErrors -->
+                  <span class="method-name">invalidDataErrors</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.extent&quot; is null
+	at automation.testcases.Validate_errors_invalid_data.invalidDataErrors(Validate_errors_invalid_data.java:13)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-planit-class-failed -->
+          <div class="suite-planit-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">automation.testcases.Validate_errors_are_gone</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -155,9 +177,11 @@
                   </a> <!-- validateErrors -->
                   <span class="method-name">validateErrors</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.extent&quot; is null
-	at automation.testcases.Validate_errors_are_gone.validateErrors(Validate_errors_are_gone.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
+	at automation.testcases.Validate_errors_are_gone.validateErrors(Validate_errors_are_gone.java:18)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -176,28 +200,10 @@
                   <span class="method-name">validateSuccess</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.extent&quot; is null
 	at automation.testcases.Validate_Successful_Message.validateSuccess(Validate_Successful_Message.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-planit-class-failed -->
-          <div class="suite-planit-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">automation.testcases.Validate_errors_invalid_data</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidDataErrors">
-                  </a> <!-- invalidDataErrors -->
-                  <span class="method-name">invalidDataErrors</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.extent&quot; is null
-	at automation.testcases.Validate_errors_invalid_data.invalidDataErrors(Validate_errors_invalid_data.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -227,23 +233,23 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;planit&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot; Validate_errors_are_gone &quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; parallel=&quot;classes&quot; name=&quot;planit&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot; Validate_errors_are_gone &quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;automation.testcases.Validate_errors_are_gone&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!--  Validate_errors_are_gone  --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot; Validate_errors_invalid_data &quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot; Validate_errors_invalid_data &quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;automation.testcases.Validate_errors_invalid_data&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!--  Validate_errors_invalid_data  --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot; Validate_Successful_Message &quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot; Validate_Successful_Message &quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;automation.testcases.Validate_Successful_Message&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!--  Validate_Successful_Message  --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot; Validate_itemsincart &quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot; Validate_itemsincart &quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;automation.testcases.Verify_itemsincart&quot;/&gt;
     &lt;/classes&gt;
@@ -298,24 +304,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyItemsinCart')
 data.setCell(0, 2, 'automation.testcases.Verify_itemsincart')
-data.setCell(0, 3, 5562);
+data.setCell(0, 3, 4940);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validateErrors')
 data.setCell(1, 2, 'automation.testcases.Validate_errors_are_gone')
-data.setCell(1, 3, 17);
+data.setCell(1, 3, 15);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateSuccess')
-data.setCell(2, 2, 'automation.testcases.Validate_Successful_Message')
-data.setCell(2, 3, 4);
+data.setCell(2, 1, 'invalidDataErrors')
+data.setCell(2, 2, 'automation.testcases.Validate_errors_invalid_data')
+data.setCell(2, 3, 6);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invalidDataErrors')
-data.setCell(3, 2, 'automation.testcases.Validate_errors_invalid_data')
-data.setCell(3, 3, 3);
+data.setCell(3, 1, 'validateSuccess')
+data.setCell(3, 2, 'automation.testcases.Validate_Successful_Message')
+data.setCell(3, 3, 4);
 window.suiteTableData['planit']= { tableData: data, tableDiv: 'times-div-planit'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-planit">
               </div> <!-- times-div-planit -->
             </div> <!-- times-div -->
@@ -349,78 +355,56 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation.testcases.Validate_errors_are_gone</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-class before">
                 <span class="method-name">configBrowser</span>
-                <span class="method-start">1057 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">1134 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateErrors</span>
-                <span class="method-start">31264 ms</span>
+                <span class="method-start">14239 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">closeBrowser([TestResult name=validateErrors status=FAILURE method=Validate_errors_are_gone.validateErrors()[pri:...)</span>
-                <span class="method-start">31371 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation.testcases.Validate_errors_invalid_data</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-class before">
                 <span class="method-name">configBrowser</span>
-                <span class="method-start">31529 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">14382 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">invalidDataErrors</span>
-                <span class="method-start">46068 ms</span>
+                <span class="method-start">30310 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">closeBrowser([TestResult name=invalidDataErrors status=FAILURE method=Validate_errors_invalid_data.invalidDataErr...)</span>
-                <span class="method-start">46082 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation.testcases.Validate_Successful_Message</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-class before">
                 <span class="method-name">configBrowser</span>
-                <span class="method-start">46161 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">30406 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateSuccess</span>
-                <span class="method-start">60107 ms</span>
+                <span class="method-start">61509 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">closeBrowser([TestResult name=validateSuccess status=FAILURE method=Validate_Successful_Message.validateSuccess()...)</span>
-                <span class="method-start">60116 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">automation.testcases.Verify_itemsincart</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-class before">
                 <span class="method-name">configBrowser</span>
-                <span class="method-start">60158 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">61568 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyItemsinCart</span>
-                <span class="method-start">84904 ms</span>
+                <span class="method-start">92831 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyItemsinCart status=SUCCESS method=Verify_itemsincart.verifyItemsinCart()[pri:...)</span>
-                <span class="method-start">90470 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">setDown</span>
-                <span class="method-start">92068 ms</span>
+                <span class="method-start">97922 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -11,13 +11,13 @@ public class Validate_errors_invalid_data_page {
 	
 	
 	@FindBy(id="forename")
-	public static WebElement namee;
+	public  WebElement namee=null;
 	
 	@FindBy(id="email")
-	public static WebElement mailiid;
+	public  WebElement mailiid=null;
 	
 	@FindBy(id="message")
-	public static WebElement messageee;
+	public  WebElement messageee=null;
 	
 	public Validate_errors_invalid_data_page(WebDriver driver) {
 	
@@ -27,7 +27,7 @@ public class Validate_errors_invalid_data_page {
 	
 	public void invalidData() {
 		
-		
+		//TestBase testbase=new TestBase();
 		mailiid.sendKeys(TestBase.property.getProperty("invalidemail"));
 		
 	}

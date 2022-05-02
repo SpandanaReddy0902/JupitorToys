@@ -7,7 +7,7 @@ import reusablemethods.pages.Validate_errors_invalid_data_page;
 
 public class Validate_errors_invalid_data extends TestBase {
 	
-	@Test(priority=3)
+	@Test
 	
 	public void invalidDataErrors() {
 		test=extent.createTest("invalidDataErrors");

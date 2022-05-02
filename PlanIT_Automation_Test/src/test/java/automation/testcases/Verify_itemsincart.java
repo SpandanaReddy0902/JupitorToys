@@ -10,7 +10,7 @@ import reusablemethods.pages.Verify_items_page;
 
 public class Verify_itemsincart extends TestBase {
 
-	@Test(priority = 4)
+	@Test
 	public void verifyItemsinCart() {
 
 		test = extent.createTest("verifyItemsinCart");

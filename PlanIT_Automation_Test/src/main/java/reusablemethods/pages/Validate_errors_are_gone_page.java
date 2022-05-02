@@ -8,46 +8,34 @@ import reusablemethods.base.TestBase;
 public class Validate_errors_are_gone_page {
 	
 	
-	
 	@FindBy(xpath ="//a[contains(@class,'primary')]")
-	
-	public static WebElement submit;
-	
+	public  WebElement submit=null;
 	@FindBy(id="forename")
-	
-	public static WebElement namep;
-	
+	public  WebElement namep=null;
 	@FindBy(id ="email")
-	
-	public static WebElement emailid;
-	
+	public  WebElement emailid=null;
 	@FindBy(name ="message")
-	
-	public  WebElement messagee;
+	public  WebElement messagee=null;
 	
 
     public Validate_errors_are_gone_page(WebDriver driver) {
 	
 	PageFactory.initElements(driver, this);
-	
-	
-	
-
-}
+     }
+    
     
     public void clickSubmitt() {
     	
-   
-    	submit.click();
-    	
+    	submit.click(); 	
     }
     
-    public void mandetoryFields() {
+    
+    public void mandetoryFields() {	
     	
-    	namep.sendKeys(TestBase.property.getProperty("name"));
+    
+		namep.sendKeys(TestBase.property.getProperty("name"));
     	emailid.sendKeys(TestBase.property.getProperty("email"));
-    	messagee.sendKeys(TestBase.property.getProperty("message"));
-    	
+    	messagee.sendKeys(TestBase.property.getProperty("message"));	
     	
     }
     

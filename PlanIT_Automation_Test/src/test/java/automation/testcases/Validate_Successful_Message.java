@@ -13,7 +13,7 @@ import reusablemethods.base.TestBase;
 import reusablemethods.pages.Homepage_to_Contactpage;
 import reusablemethods.pages.Validate_errors_are_gone_page;
 
-@Test(priority = 2)
+@Test
 
 public class Validate_Successful_Message extends TestBase {
 

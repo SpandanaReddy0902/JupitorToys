@@ -3,6 +3,8 @@ package automation.testcases;
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import reusablemethods.base.TestBase;
@@ -11,7 +13,7 @@ import reusablemethods.pages.Validate_errors_are_gone_page;
 
 public class Validate_errors_are_gone extends TestBase {
 
-	@Test(priority = 1)
+	@Test
 	public void validateErrors() {
 		test = extent.createTest("validateErrors");
 		String messageError = "Message is required";
@@ -20,10 +22,12 @@ public class Validate_errors_are_gone extends TestBase {
 		Boolean notDisplayed = false;
 
 		// Navigating to contact page
+		//WebDriver driver=new ChromeDriver();
 
 		Homepage_to_Contactpage hc = new Homepage_to_Contactpage(driver);
+		
 		hc.contactPage();
-
+	
 		// Submitting the form in contact page without any data
 
 		Validate_errors_are_gone_page ve = new Validate_errors_are_gone_page(driver);

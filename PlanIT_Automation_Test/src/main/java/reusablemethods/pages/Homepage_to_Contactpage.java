@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 public class Homepage_to_Contactpage {
 	 
 	     @FindBy(xpath = "//a[contains(@href,'contact')]")
-		 public  WebElement contact;
+		 public  WebElement contact=null;
 
 		 
 		 public  Homepage_to_Contactpage(WebDriver driver) {
-				
+			
 				PageFactory.initElements(driver, this);		
 			
 			}

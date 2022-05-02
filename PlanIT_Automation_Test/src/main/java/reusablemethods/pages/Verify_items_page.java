@@ -8,16 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 public class Verify_items_page {
 	
 	@FindBy(xpath = "//a[contains(@href,'shop')]")
-	public  WebElement shop;
+	public  WebElement shop=null;
 	
 	@FindBy(xpath="//li[contains(.,'Funny Cow')]//a[contains(@class,'btn btn-success')]")
-	public  WebElement funnycow;
+	public  WebElement funnycow=null;
 	
 	@FindBy(xpath = "//li[contains(.,'Fluffy Bunny')]//a[contains(@class,'btn btn-success')]")
-	public  WebElement fluffybunny;
+	public  WebElement fluffybunny=null;
 	
 	@FindBy(xpath = "//i[@class='icon icon-shopping-cart icon-white']")
-	public  WebElement cart;
+	public  WebElement cart=null;
 	
 	public Verify_items_page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
