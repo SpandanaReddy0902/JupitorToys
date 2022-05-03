@@ -10,10 +10,10 @@ import reusablemethods.pages.Verify_items_page;
 
 public class Verify_itemsincart extends TestBase {
 
-	@Test
+	@Test(priority=4)
 	public void verifyItemsinCart() {
 
-		test = extent.createTest("verifyItemsinCart");
+		//test = extent.createTest("verifyItemsinCart");
 
 		String funnyCowItems = "2";
 		String fluffyBunnyItems = "1";

@@ -6,6 +6,8 @@
 	<artifactId>PlanIT_Automation_Test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -16,13 +18,13 @@
 		</dependency>
 
 
+		
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.5</version>
-			<scope>test</scope>
+			<scope>compile</scope>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
@@ -108,12 +110,12 @@
 			<version>2.5.2</version>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.30</version>
-        </dependency>
+		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.30</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<!-- To define the plugin version in your parent POM -->

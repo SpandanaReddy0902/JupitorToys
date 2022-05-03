@@ -13,15 +13,15 @@ import reusablemethods.base.TestBase;
 import reusablemethods.pages.Homepage_to_Contactpage;
 import reusablemethods.pages.Validate_errors_are_gone_page;
 
-@Test
+
 
 public class Validate_Successful_Message extends TestBase {
-
+	@Test(priority=3)
 	public  void validateSuccess() {
 		
 		
 		//Navigating to Contact page from Home page
-		test = extent.createTest("validateSuccess");
+		//test = extent.createTest("validateSuccess");
 		Homepage_to_Contactpage hc = new Homepage_to_Contactpage(driver);
 		hc.contactPage();
 

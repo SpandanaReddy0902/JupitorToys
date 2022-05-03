@@ -29,9 +29,9 @@ public class TestBase {
 	public static  Properties property;
 	public  WebDriver driver=null;	
 	//public TestBase testbase=null;
-	public  ExtentReports extent;
-	public ExtentSparkReporter sparkreporter;
-	public ExtentTest test;
+	//public  ExtentReports extent;
+	//public ExtentSparkReporter sparkreporter;
+	//public ExtentTest test;
 	
 
 	public static  void loadConfigproperty() {
@@ -58,23 +58,23 @@ public class TestBase {
 	}
 	
 	
-	@BeforeSuite
-	public void setExtent() {
+	//@BeforeSuite
+	//public void setExtent() {
 		
-		sparkreporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/PlanitExtentReports.html");
-		sparkreporter.config().setDocumentTitle("JupiterToys");
-		sparkreporter.config().setReportName("PlanItTestCases");
-		extent=new ExtentReports();
-		extent.attachReporter(sparkreporter);
-	}
+		//sparkreporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/PlanitExtentReports.html");
+		//sparkreporter.config().setDocumentTitle("JupiterToys");
+		//sparkreporter.config().setReportName("PlanItTestCases");
+		//extent=new ExtentReports();
+		//extent.attachReporter(sparkreporter);
+	//}
 	
 	
 	
-	@AfterSuite
-	public void setDown() {
+//	@AfterSuite
+	//public void setDown() {
 		
-		extent.flush();
-	}
+		//extent.flush();
+	//}
 	
 	
 	@BeforeClass
@@ -93,22 +93,23 @@ public class TestBase {
 	}
 
 	@AfterClass
-	public void closeBrowser(ITestResult result) {
+	public void closeBrowser() {
+		//ITestResult result
 		
-		if(result.getStatus() == ITestResult.FAILURE)
-        {
-            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED ", ExtentColor.RED));
-            test.fail(result.getThrowable());
-        }
-        else if(result.getStatus() == ITestResult.SUCCESS)
-        {
-            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
-        }
-        else
-        {
-            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
-            test.skip(result.getThrowable());
-        }
+		//if(result.getStatus() == ITestResult.FAILURE)
+       // {
+           // test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED ", ExtentColor.RED));
+           // test.fail(result.getThrowable());
+       // }
+      //  else if(result.getStatus() == ITestResult.SUCCESS)
+       // {
+          //  test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+       // }
+       // else
+       // {
+           // test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
+           // test.skip(result.getThrowable());
+       // }
     
 		driver.quit();
 		

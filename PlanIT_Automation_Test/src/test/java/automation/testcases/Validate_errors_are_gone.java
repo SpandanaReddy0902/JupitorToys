@@ -13,9 +13,9 @@ import reusablemethods.pages.Validate_errors_are_gone_page;
 
 public class Validate_errors_are_gone extends TestBase {
 
-	@Test
-	public void validateErrors() {
-		test = extent.createTest("validateErrors");
+	@Test (priority=1)
+	public void validateErrors() throws Exception {
+		//test = extent.createTest("validateErrors");
 		String messageError = "Message is required";
 		String forenameError = "Forename is required";
 		String emailError = "Email is required";
@@ -25,7 +25,7 @@ public class Validate_errors_are_gone extends TestBase {
 		//WebDriver driver=new ChromeDriver();
 
 		Homepage_to_Contactpage hc = new Homepage_to_Contactpage(driver);
-		
+		Thread.sleep(2000);
 		hc.contactPage();
 	
 		// Submitting the form in contact page without any data

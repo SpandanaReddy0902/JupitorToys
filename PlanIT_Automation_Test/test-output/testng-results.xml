@@ -1,248 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-02T21:37:14 AEST" name="planit" finished-at="2022-05-02T21:38:50 AEST" duration-ms="96718">
+  <suite started-at="2022-05-03T10:47:59 AEST" name="planit" finished-at="2022-05-03T10:48:58 AEST" duration-ms="58841">
     <groups>
     </groups>
-    <test started-at="2022-05-02T21:37:14 AEST" name=" Validate_errors_are_gone " finished-at="2022-05-02T21:37:27 AEST" duration-ms="13199">
-      <class name="automation.testcases.Validate_errors_are_gone">
-        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_are_gone@750e2b97]" started-at="2022-05-02T21:37:14 AEST" name="configBrowser" finished-at="2022-05-02T21:37:27 AEST" duration-ms="12907" status="PASS">
+    <test started-at="2022-05-03T10:47:59 AEST" name=" Validate_errors_are_gone " finished-at="2022-05-03T10:48:58 AEST" duration-ms="58841">
+      <class name="automation.testcases.Verify_itemsincart">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Verify_itemsincart@3e27aa33]" started-at="2022-05-03T10:47:59 AEST" name="configBrowser" finished-at="2022-05-03T10:48:28 AEST" duration-ms="28507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBrowser -->
-        <test-method signature="validateErrors()[pri:0, instance:automation.testcases.Validate_errors_are_gone@750e2b97]" started-at="2022-05-02T21:37:27 AEST" name="validateErrors" finished-at="2022-05-02T21:37:27 AEST" duration-ms="15" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.extent" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.extent" is null
-at automation.testcases.Validate_errors_are_gone.validateErrors(Validate_errors_are_gone.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="verifyItemsinCart()[pri:4, instance:automation.testcases.Verify_itemsincart@3e27aa33]" started-at="2022-05-03T10:48:28 AEST" name="verifyItemsinCart" finished-at="2022-05-03T10:48:37 AEST" duration-ms="8552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemsinCart -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testcases.Verify_itemsincart@3e27aa33]" started-at="2022-05-03T10:48:37 AEST" name="closeBrowser" finished-at="2022-05-03T10:48:47 AEST" duration-ms="10478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- automation.testcases.Verify_itemsincart -->
+      <class name="automation.testcases.Validate_errors_are_gone">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_are_gone@55a147cc]" started-at="2022-05-03T10:47:59 AEST" name="configBrowser" finished-at="2022-05-03T10:48:32 AEST" duration-ms="32790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBrowser -->
+        <test-method signature="validateErrors()[pri:1, instance:automation.testcases.Validate_errors_are_gone@55a147cc]" started-at="2022-05-03T10:48:32 AEST" name="validateErrors" finished-at="2022-05-03T10:48:44 AEST" duration-ms="12074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateErrors -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:automation.testcases.Validate_errors_are_gone@750e2b97]" started-at="2022-05-02T21:37:27 AEST" name="closeBrowser" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1651491447426" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testcases.Validate_errors_are_gone@55a147cc]" started-at="2022-05-03T10:48:44 AEST" name="closeBrowser" finished-at="2022-05-03T10:48:47 AEST" duration-ms="2774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- automation.testcases.Validate_errors_are_gone -->
-    </test> <!--  Validate_errors_are_gone  -->
-    <test started-at="2022-05-02T21:37:27 AEST" name=" Validate_errors_invalid_data " finished-at="2022-05-02T21:37:43 AEST" duration-ms="15992">
       <class name="automation.testcases.Validate_errors_invalid_data">
-        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_invalid_data@3a7442c7]" started-at="2022-05-02T21:37:27 AEST" name="configBrowser" finished-at="2022-05-02T21:37:43 AEST" duration-ms="15927" status="PASS">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_errors_invalid_data@3646a422]" started-at="2022-05-03T10:47:59 AEST" name="configBrowser" finished-at="2022-05-03T10:48:40 AEST" duration-ms="40241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBrowser -->
-        <test-method signature="invalidDataErrors()[pri:0, instance:automation.testcases.Validate_errors_invalid_data@3a7442c7]" started-at="2022-05-02T21:37:43 AEST" name="invalidDataErrors" finished-at="2022-05-02T21:37:43 AEST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.extent" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.extent" is null
-at automation.testcases.Validate_errors_invalid_data.invalidDataErrors(Validate_errors_invalid_data.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="invalidDataErrors()[pri:2, instance:automation.testcases.Validate_errors_invalid_data@3646a422]" started-at="2022-05-03T10:48:40 AEST" name="invalidDataErrors" finished-at="2022-05-03T10:48:42 AEST" duration-ms="2428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidDataErrors -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:automation.testcases.Validate_errors_invalid_data@3a7442c7]" started-at="2022-05-02T21:37:43 AEST" name="closeBrowser" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1651491463490" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testcases.Validate_errors_invalid_data@3646a422]" started-at="2022-05-03T10:48:42 AEST" name="closeBrowser" finished-at="2022-05-03T10:48:47 AEST" duration-ms="5088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- automation.testcases.Validate_errors_invalid_data -->
-    </test> <!--  Validate_errors_invalid_data  -->
-    <test started-at="2022-05-02T21:37:43 AEST" name=" Validate_Successful_Message " finished-at="2022-05-02T21:38:14 AEST" duration-ms="31126">
       <class name="automation.testcases.Validate_Successful_Message">
-        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_Successful_Message@742ff096]" started-at="2022-05-02T21:37:43 AEST" name="configBrowser" finished-at="2022-05-02T21:38:14 AEST" duration-ms="31102" status="PASS">
+        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Validate_Successful_Message@750e2b97]" started-at="2022-05-03T10:47:59 AEST" name="configBrowser" finished-at="2022-05-03T10:48:27 AEST" duration-ms="27957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBrowser -->
-        <test-method signature="validateSuccess()[pri:0, instance:automation.testcases.Validate_Successful_Message@742ff096]" started-at="2022-05-02T21:38:14 AEST" name="validateSuccess" finished-at="2022-05-02T21:38:14 AEST" duration-ms="4" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.extent" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.extent" is null
-at automation.testcases.Validate_Successful_Message.validateSuccess(Validate_Successful_Message.java:24)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="validateSuccess()[pri:3, instance:automation.testcases.Validate_Successful_Message@750e2b97]" started-at="2022-05-03T10:48:28 AEST" name="validateSuccess" finished-at="2022-05-03T10:48:57 AEST" duration-ms="29046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSuccess -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:automation.testcases.Validate_Successful_Message@742ff096]" started-at="2022-05-02T21:38:14 AEST" name="closeBrowser" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1651491494677" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testcases.Validate_Successful_Message@750e2b97]" started-at="2022-05-03T10:48:57 AEST" name="closeBrowser" finished-at="2022-05-03T10:48:58 AEST" duration-ms="1645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- automation.testcases.Validate_Successful_Message -->
-    </test> <!--  Validate_Successful_Message  -->
-    <test started-at="2022-05-02T21:38:14 AEST" name=" Validate_itemsincart " finished-at="2022-05-02T21:38:50 AEST" duration-ms="36236">
-      <class name="automation.testcases.Verify_itemsincart">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:automation.testcases.Verify_itemsincart@15043a2f]" started-at="2022-05-02T21:37:13 AEST" name="setExtent" finished-at="2022-05-02T21:37:14 AEST" duration-ms="1073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="configBrowser()[pri:0, instance:automation.testcases.Verify_itemsincart@15043a2f]" started-at="2022-05-02T21:38:14 AEST" name="configBrowser" finished-at="2022-05-02T21:38:45 AEST" duration-ms="31262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBrowser -->
-        <test-method signature="verifyItemsinCart()[pri:0, instance:automation.testcases.Verify_itemsincart@15043a2f]" started-at="2022-05-02T21:38:45 AEST" name="verifyItemsinCart" finished-at="2022-05-02T21:38:50 AEST" duration-ms="4940" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyItemsinCart -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:automation.testcases.Verify_itemsincart@15043a2f]" started-at="2022-05-02T21:38:50 AEST" name="closeBrowser" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1651491530941" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest> into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setDown()[pri:0, instance:automation.testcases.Verify_itemsincart@15043a2f]" started-at="2022-05-02T21:38:51 AEST" name="setDown" finished-at="2022-05-02T21:38:53 AEST" duration-ms="2916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDown -->
-      </class> <!-- automation.testcases.Verify_itemsincart -->
-    </test> <!--  Validate_itemsincart  -->
+    </test> <!--  Validate_errors_are_gone  -->
   </suite> <!-- planit -->
 </testng-results>

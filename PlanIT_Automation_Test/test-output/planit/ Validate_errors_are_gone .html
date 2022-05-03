@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'> Validate_errors_are_gone </h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 02 21:37:14 AEST 2022</td>
+<td>Started on:</td><td>Tue May 03 10:47:59 AEST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13199 ms)</td>
+<tr><td>Total time:</td><td>58 seconds (58841 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,74 +67,33 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automation.testcases.Validate_errors_are_gone.closeBrowser()'><b>closeBrowser</b><br>Test class: automation.testcases.Validate_errors_are_gone</td>
-<td><div><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace886380761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace886380761'><pre>org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @AfterClass annotated closeBrowser.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-</pre></div></td>
-<td>-1651491447</td>
-<td>automation.testcases.Validate_errors_are_gone@750e2b97</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td title='automation.testcases.Validate_Successful_Message.validateSuccess()'><b>validateSuccess</b><br>Test class: automation.testcases.Validate_Successful_Message</td>
+<td></td>
+<td>29</td>
+<td>automation.testcases.Validate_Successful_Message@750e2b97</td></tr>
+<tr>
+<td title='automation.testcases.Validate_errors_invalid_data.invalidDataErrors()'><b>invalidDataErrors</b><br>Test class: automation.testcases.Validate_errors_invalid_data</td>
+<td></td>
+<td>2</td>
+<td>automation.testcases.Validate_errors_invalid_data@3646a422</td></tr>
+<tr>
+<td title='automation.testcases.Verify_itemsincart.verifyItemsinCart()'><b>verifyItemsinCart</b><br>Test class: automation.testcases.Verify_itemsincart</td>
+<td></td>
+<td>8</td>
+<td>automation.testcases.Verify_itemsincart@3e27aa33</td></tr>
 <tr>
 <td title='automation.testcases.Validate_errors_are_gone.validateErrors()'><b>validateErrors</b><br>Test class: automation.testcases.Validate_errors_are_gone</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.extent&quot; is null
-	at automation.testcases.Validate_errors_are_gone.validateErrors(Validate_errors_are_gone.java:18)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace204859529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace204859529'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.extent&quot; is null
-	at automation.testcases.Validate_errors_are_gone.validateErrors(Validate_errors_are_gone.java:18)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-</pre></div></td>
-<td>0</td>
-<td>automation.testcases.Validate_errors_are_gone@750e2b97</td></tr>
+<td></td>
+<td>12</td>
+<td>automation.testcases.Validate_errors_are_gone@55a147cc</td></tr>
 </table><p>
 </body>
 </html>
